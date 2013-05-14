@@ -1,0 +1,57 @@
+= capistrano-copy_with_triggers
+
+== Description
+
+A capistrano deploy strategy based on copy but with triggers before and
+after each discrete step of the dpeloy task.
+
+== Requirements
+
+
+== Installation
+
+    gem install capistrano-copy_with_triggers
+
+== Usage
+
+To use this deployment strategy, add this line to your <tt>deploy.rb</tt> file:
+
+    set :deploy_via, :copy_with_triggers
+
+== Contributors
+
+I wrote this code myself, but borrowed heavily from two sources:
+
+Rudolph Schmidt for his capistrano-strategy-copy-bundled [1]
+from which I learned how to generate triggers.
+
+Patrick Reagan & Mark Cornick for their capistrano_rsync_with_remote_cache [2]
+which I used as a template to create this gem.
+
+[1] https://github.com/rudionrails/capistrano-strategy-copy-bundled
+[2] https://github.com/vigetlabs/capistrano_rsync_with_remote_cache
+
+== License
+
+Copyright (c) 2010 - 2013 Robin Bowes <robin.bowes@yo61.com>
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without
+restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
